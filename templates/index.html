@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<div class="table-responsive-xl">
+  <table id="company-table" class="table table-striped">
+    <thead>
+      <tr class="table-active">
+        <th class="table-info" scope="col">Id</th>
+        <th class="table-warning" scope="col">Name</th>
+        <th class="table-danger" scope="col">Country Iso</th>
+        <th class="table-success" scope="col">City</th>
+        <th class="table-primary" scope="col">Nace</th>
+        <th class="table-warning" scope="col">Website</th>
+      </tr>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- CSS only -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="/static/assets/css/custom.css">
+    </thead>
+    <tbody>
+      {% for company in content %}
+      <tr>
+        <td class="table-info">{{ company["id"] }}</td>
+        <td class="table-warning">{{ company["name"] }}</td>
+        <td class="table-danger">{{ company["country_iso"] }}</td>
+        <td class="table-success">{{ company["city"] }}</td>
+        <td class="table-primary">{{ company["nace"] }}</td>
+        <td class="table-warning">{{ company["website"] }}</td>
+      </tr>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
