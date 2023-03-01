@@ -10,7 +10,7 @@ app = Flask(__name__)
 def get_db():
     """
     Function to connect with MongoDB localhost
-    :return: Successfully connected with MongoDB localhost
+    :return: Company collection
     """
     client = pymongo.MongoClient("mongodb://localhost:27017")
     add_company = client["MyProject"]
