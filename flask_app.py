@@ -60,9 +60,9 @@ def get_cleaned_data():
     """
     GET method for connecting and geting data
     from MongoDB collection Companies.Companies
-    :type: dict
-    :return: Successfully got data - dictionaries
-    from MongoDB collection Companies.Companies
+    :type: list
+    :return: Successfully got data from
+    MongoDB collection Companies.Companies
     """
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     add_company = client["MyProject"]
