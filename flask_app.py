@@ -58,7 +58,7 @@ def add_companies():
 @app.route('/get_cleaned_data', methods=["GET"])
 def get_cleaned_data():
     """
-    GET method and function for connecting and geting data
+    GET method for connecting and geting data
     from MongoDB collection Companies.Companies
     :type: dict
     :return: Successfully got data - dictionaries
@@ -77,8 +77,7 @@ def get_cleaned_data():
 @app.route("/frontend")
 def index():
     """
-    Function for getting data from function get_cleaned_data()
-    and connect with the Front-End
+    Showing cleaned companies data to the frontend
     :type: list of dict
     :return: Successfully connected data from function get_cleaned_data()
     with the Front-End
