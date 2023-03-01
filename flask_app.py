@@ -67,7 +67,6 @@ def get_cleaned_data():
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     add_company = client["MyProject"]
     my_col = add_company["Companies.Companies"]
-    print(type(my_col))
     x   = []
     company = my_col.find()
     for i in company:
@@ -79,11 +78,9 @@ def index():
     """
     Showing cleaned companies data to the frontend
     :type: list of dict
-    :return: Successfully connected data from function get_cleaned_data()
-    with the Front-End
+    :return: Renders template index.html
     """
     content = get_cleaned_data()
-    print(type(content))
     return render_template("index.html", content=content)
 
 if __name__ == '__main__':
