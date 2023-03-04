@@ -1,4 +1,4 @@
-# Flask application for Big Data Purification (Company names) 
+# Flask application for Big Data Purification (Company names) and transferring data from a relational database (SQL lite) to a non-relational one (MongoDB)
 ### `The Flask application is written with Python language in Pycharm`
 [![N|Solid](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZNP8K1HFw-mHFkBoR5Xbx0BydDGu7ZzhwYRV4QjJvTrWrQcMKaFwrqa8UZ9J1vQ0mRk&usqp=CAU)](https://www.jetbrains.com/pycharm/download/#section=windows)[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/downloads/)
 
